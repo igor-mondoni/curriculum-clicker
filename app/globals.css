@@ -1,0 +1,68 @@
+:root {
+  --color-background-start: #020617;
+  --color-background-mid: #1e293b;
+  --color-background-end: #0f172a;
+  --color-primary: #34d399;
+  --color-secondary: #38bdf8;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --font-mono:
+    "ui-monospace", "Menlo", "Monaco", "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+body {
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.animated-gradient {
+  background: linear-gradient(
+    -45deg,
+    var(--color-background-start),
+    var(--color-background-mid),
+    var(--color-background-end),
+    var(--color-background-start)
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+section {
+  width: 100%;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 1rem;
+}
