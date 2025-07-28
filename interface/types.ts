@@ -29,7 +29,7 @@ export interface ResumeData {
 }
 
 // --- TIPOS PARA A LÓGICA DO JOGO ---
-export interface Upgrade {
+export interface Asset {
   id: number;
   category: any[];
   name: string;
@@ -45,11 +45,12 @@ export interface Upgrade {
   dollarCostUnique: number;
   pps: number;
   owned: number;
-  requirements: any[]; // Defina um tipo mais específico se necessário
-  effects: any[]; // Defina um tipo mais específico se necessário
-  activeEffects: any[]; // Defina um tipo mais específico se necessário
-  productivity:number;
-   clickpower: number;
+  requirements: any[];
+  effects: any[];
+  activeEffects: any[];
+  productivity: number;
+  clickpower: number;
+  image: string;
 }
 export interface SpecialUpgrade {
   id: number;
@@ -81,5 +82,5 @@ export interface PlayerStatus {
   ownedUpgrades: any[];
   realPerSecondCost: number;
   dollarPerSecondCost: number;
-  demand:number;
+  demand: number;
 }

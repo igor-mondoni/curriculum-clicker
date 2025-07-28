@@ -1,4 +1,4 @@
-import { ResumeData, Upgrade, Sections, SpecialUpgrade } from '../interface/types';
+import { ResumeData, Asset, Sections, SpecialUpgrade } from '../interface/types';
 
 import About from '../app/components/About';
 import Experience from '../app/components/Experience';
@@ -63,7 +63,7 @@ export const resumeData: ResumeData = {
     },
   ],
 };
-export const initialAssets: Upgrade[] = [
+export const initialAssets: Asset[] = [
   {
     id: 1,
     category: ["asset", "hardware"],
@@ -72,7 +72,7 @@ export const initialAssets: Upgrade[] = [
     devPointsCost: 50,
     pps: 1.5,
     owned: 0,
-    requirements: {},
+    requirements: [],
     originalCostReal: 0,
     originalCostDevPoints: 0,
     originalCostDollar: 0,
@@ -95,7 +95,7 @@ export const initialAssets: Upgrade[] = [
     devPointsCost: 120,
     pps: 2.5,
     owned: 0,
-    requirements: {},
+    requirements: [],
     originalCostReal: 0,
     originalCostDevPoints: 0,
     originalCostDollar: 0,
@@ -118,7 +118,7 @@ export const initialAssets: Upgrade[] = [
     devPointsCost: 500,
     pps: 10,
     owned: 0,
-    requirements: { id: [1, 2], qtd: [1, 1] },
+    requirements: [],
     originalCostReal: 0,
     originalCostDevPoints: 0,
     originalCostDollar: 0,
@@ -141,7 +141,7 @@ export const initialAssets: Upgrade[] = [
     devPointsCost: 1200,
     pps: 20,
     owned: 0,
-    requirements: {},
+    requirements: [],
     originalCostReal: 0,
     originalCostDevPoints: 0,
     originalCostDollar: 0,
@@ -164,7 +164,7 @@ export const initialAssets: Upgrade[] = [
     devPointsCost: 2500,
     pps: 40.5,
     owned: 0,
-    requirements: { id: [3], qtd: [1] },
+    requirements: [],
     originalCostReal: 0,
     originalCostDevPoints: 0,
     originalCostDollar: 0,
@@ -187,7 +187,7 @@ export const initialAssets: Upgrade[] = [
     devPointsCost: 8000,
     pps: 150,
     owned: 0,
-    requirements: { id: [5], qtd: [1] },
+    requirements: [],
     originalCostReal: 0,
     originalCostDevPoints: 0,
     originalCostDollar: 0,
@@ -210,7 +210,7 @@ export const initialAssets: Upgrade[] = [
     devPointsCost: 50000,
     pps: 1350,
     owned: 0,
-    requirements: { id: [4, 5], qtd: [1, 1] },
+    requirements:[],
     originalCostReal: 0,
     originalCostDevPoints: 0,
     originalCostDollar: 0,
@@ -233,7 +233,7 @@ export const initialAssets: Upgrade[] = [
     devPointsCost: 150000,
     pps: 5000,
     owned: 0,
-    requirements: { id: [7], qtd: [1] },
+    requirements:[],
     originalCostReal: 0,
     originalCostDevPoints: 0,
     originalCostDollar: 0,
@@ -256,7 +256,7 @@ export const initialAssets: Upgrade[] = [
     devPointsCost: 1000000,
     pps: 15000,
     owned: 0,
-    requirements: { id: [8], qtd: [2] },
+    requirements:[],
     originalCostReal: 0,
     originalCostDevPoints: 0,
     originalCostDollar: 0,
@@ -279,7 +279,7 @@ export const initialAssets: Upgrade[] = [
     devPointsCost: 5000000,
     pps: 100000,
     owned: 0,
-    requirements: { id: [9], qtd: [2] },
+    requirements:[],
     originalCostReal: 0,
     originalCostDevPoints: 0,
     originalCostDollar: 0,
